@@ -1,0 +1,162 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+text-align:center;
+}
+
+header{
+padding:30px;
+background:#161b22;
+}
+
+header h1{
+font-size:3rem;
+color:#58a6ff;
+}
+
+.container{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+padding:30px;
+}
+
+.info{
+width:400px;
+}
+
+.card{
+background:#161b22;
+padding:20px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(88,166,255,.3);
+}
+
+.card h3,
+.card h2{
+margin-bottom:10px;
+color:#58a6ff;
+}
+
+button{
+padding:10px 20px;
+background:#58a6ff;
+border:none;
+color:white;
+border-radius:10px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#298eff;
+}
+
+.atom-area{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.atom{
+position:relative;
+width:500px;
+height:500px;
+}
+
+.nucleus{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:100px;
+height:100px;
+background:crimson;
+border-radius:50%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+z-index:5;
+}
+
+.orbit{
+position:absolute;
+top:50%;
+left:50%;
+border:2px solid rgba(255,255,255,.3);
+border-radius:50%;
+transform:translate(-50%,-50%);
+}
+
+.orbit1{
+width:150px;
+height:150px;
+animation:spin 10s linear infinite;
+}
+
+.orbit2{
+width:270px;
+height:270px;
+animation:spin 15s linear infinite;
+}
+
+.orbit3{
+width:390px;
+height:390px;
+animation:spin 20s linear infinite;
+}
+
+.electron{
+width:15px;
+height:15px;
+background:#58a6ff;
+border-radius:50%;
+position:absolute;
+}
+
+.e1{top:-8px;left:50%;}
+.e2{bottom:-8px;left:50%;}
+
+.e3{top:-8px;left:50%;}
+.e4{bottom:-8px;left:50%;}
+.e5{left:-8px;top:50%;}
+.e6{right:-8px;top:50%;}
+.e7{top:20%;left:15%;}
+.e8{top:20%;right:15%;}
+.e9{bottom:20%;left:15%;}
+.e10{bottom:20%;right:15%;}
+
+.excited{
+top:-8px;
+left:50%;
+background:yellow;
+box-shadow:0 0 15px yellow;
+transition:all 1s ease;
+}
+
+.properties{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:30px;
+}
+
+@keyframes spin{
+from{
+transform:translate(-50%,-50%) rotate(0deg);
+}
+to{
+transform:translate(-50%,-50%) rotate(360deg);
+}
+}

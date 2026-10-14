@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sodium Atomic Model Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sodium (Na) Atomic Model</h1>
+    <p>Atomic Number 11</p>
+</header>
+
+<div class="container">
+
+    <section class="info">
+        <h2>Element Information</h2>
+
+        <div class="card">
+            <h3>Basic Facts</h3>
+            <p><strong>Element:</strong> Sodium</p>
+            <p><strong>Symbol:</strong> Na</p>
+            <p><strong>Atomic Number:</strong> 11</p>
+            <p><strong>Mass Number:</strong> 23</p>
+            <p><strong>Protons:</strong> 11</p>
+            <p><strong>Neutrons:</strong> 12</p>
+            <p><strong>Electrons:</strong> 11</p>
+            <p><strong>Valence Electrons:</strong> 1</p>
+        </div>
+
+        <div class="card">
+            <h3>Subatomic Particles</h3>
+
+            <p><strong>Proton</strong></p>
+            <p>Charge: +1</p>
+            <p>Mass: 1 amu</p>
+
+            <hr>
+
+            <p><strong>Neutron</strong></p>
+            <p>Charge: 0</p>
+            <p>Mass: 1 amu</p>
+
+            <hr>
+
+            <p><strong>Electron</strong></p>
+            <p>Charge: -1</p>
+            <p>Mass: 1/1836 amu</p>
+        </div>
+
+        <div class="card">
+            <h3>Electron Configuration</h3>
+
+            <p><strong>Ground State:</strong> 1s² 2s² 2p⁶ 3s¹</p>
+
+            <p id="stateText">
+                <strong>Excited State:</strong> 1s² 2s² 2p⁶ 3p¹
+            </p>
+
+            <button onclick="exciteElectron()">
+                Move Excited Electron
+            </button>
+        </div>
+    </section>
+
+    <section class="atom-area">
+
+        <h2>Atom Model</h2>
+
+        <div class="atom">
+
+            <div class="nucleus">
+                <span>11p</span>
+                <span>12n</span>
+            </div>
+
+            <div class="orbit orbit1">
+                <div class="electron e1"></div>
+                <div class="electron e2"></div>
+            </div>
+
+            <div class="orbit orbit2">
+                <div class="electron e3"></div>
+                <div class="electron e4"></div>
+                <div class="electron e5"></div>
+                <div class="electron e6"></div>
+                <div class="electron e7"></div>
+                <div class="electron e8"></div>
+                <div class="electron e9"></div>
+                <div class="electron e10"></div>
+            </div>
+
+            <div class="orbit orbit3">
+                <div class="electron excited" id="outerElectron"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<section class="properties">
+
+    <div class="card">
+        <h2>Physical Properties</h2>
+        <ul>
+            <li>Soft silver-white metal</li>
+            <li>Low density</li>
+            <li>Good conductor of electricity</li>
+            <li>Solid at room temperature</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Chemical Properties</h2>
+        <ul>
+            <li>Highly reactive alkali metal</li>
+            <li>Reacts rapidly with water</li>
+            <li>Forms sodium hydroxide</li>
+            <li>Usually found in compounds</li>
+        </ul>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
